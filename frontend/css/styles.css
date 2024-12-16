@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+#messages-container {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#messages-container div {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#messages-container div.sent {
+  text-align: right;
+  background-color: #d4edda;
+}
+
+#messages-container div.received {
+  text-align: left;
+  background-color: #f8d7da;
+}
+
+#messages-container div.timestamp {
+  font-size: 0.8em;
+  color: #888;
+}
