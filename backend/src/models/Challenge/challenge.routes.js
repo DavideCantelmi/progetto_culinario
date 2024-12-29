@@ -5,7 +5,7 @@ const {
   getChallenges,
   participateInChallenge,
   voteForChallenge
-} = require('../controllers/challengeController')
+} = require('./challenge.controller')
 const { protect } = require('../../middlewares/authMiddleware')
 
 router.post('/', protect, createChallenge)

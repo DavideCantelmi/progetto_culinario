@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const { followUser, unfollowUser, getFollowers, getFollowing } = require('../controllers/followController')
+const { followUser, unfollowUser, getFollowers, getFollowing } = require('./follow.controller')
 const { protect } = require('../../middlewares/authMiddleware')
 
 router.post('/:id/follow', protect, followUser)
