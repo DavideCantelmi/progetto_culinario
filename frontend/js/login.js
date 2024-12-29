@@ -7,7 +7,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
   try {
     await login(email, password);
     alert('Login effettuato con successo!');
-    window.location.href = 'index.html';
+    window.location.href = '../dashboard.html';
   } catch (error) {
     alert('Errore durante il login: ' + error.message);
   }
